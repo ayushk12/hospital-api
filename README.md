@@ -16,8 +16,8 @@ API collection :
 /doctors/register
 /doctors/login
 /register_patient
-/patients/:id/create_report
-/patients/:id/
+/patient/:id/create_report
+/patient/:id/all_report
 /reports/:status
 
 #testing
