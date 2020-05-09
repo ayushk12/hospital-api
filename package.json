@@ -17,5 +17,9 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.6",
     "nodemon": "^2.0.2"
+  },
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^7.1.2"
   }
 }
