@@ -5,8 +5,8 @@ const patientSchema = new mongoose.Schema({
     type: Number,
     required: true,
     unique: true,
-    minlength: 10
-  }
+    minlength: 10,
+  },
 });
 
 const Patient = mongoose.model("patient", patientSchema);

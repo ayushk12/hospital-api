@@ -13,15 +13,15 @@ dotenv.config({ path: "./config/config.env" });
 mongoose
   .connect("mongodb://localhost/hospital")
   .then(() => console.log("connected to db"))
-  .catch(error => console.error("error", error));
+  .catch((error) => console.error("error", error));
 
 app.use(express.json()); // req.body middleware
 
 app.use("/api", route);
 app.use(errorHandler);
 
-const PORT = process.env.PORT || 8000;
+const PORT = process.env.PORT || 5000;
 // connect to server
-app.listen(PORT, () => {
+module.exports = app.listen(PORT, () => {
   console.log(`Server started on ${PORT}`);
 });
